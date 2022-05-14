@@ -12,9 +12,11 @@ class TodayEmpty extends StatelessWidget {
       children: [
         const Center(child: Text('복용 중인 약이 없습니다.')),
         const SizedBox(height: smallSpace),
-        Text(
+        const Text(
           '약을 추가해보세요!',
-          style: Theme.of(context).textTheme.subtitle1,
+          style:
+              TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.w700),
+          // style: Theme.of(context).textTheme.subtitle1,
         ),
         const SizedBox(height: smallSpace),
         const Icon(CupertinoIcons.arrow_down),

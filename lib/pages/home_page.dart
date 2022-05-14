@@ -1,3 +1,4 @@
+import 'package:dory/pages/today/pharmacy_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -19,6 +20,7 @@ class _HomePageState extends State<HomePage> {
   final _pages = [
     const TodayPage(),
     const HistoryPage(),
+    const PharmacyPage(),
   ];
 
   @override
@@ -30,7 +32,10 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _onAddMedicine,
-        child: const Icon(CupertinoIcons.add),
+        backgroundColor: Colors.blue[500], // 색
+        child: const Icon(
+          CupertinoIcons.add,
+        ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       bottomNavigationBar: _buildBottomAppBar(),
@@ -49,22 +54,18 @@ class _HomePageState extends State<HomePage> {
               onPressed: () => _onCurrentPage(0),
               child: Icon(
                 CupertinoIcons.checkmark,
-                color: _currentIndex == 0
-                    ? DoryColors.primaryColor
-                    : Colors.grey[350],
+                color: _currentIndex == 0 ? Colors.blue : Colors.grey[350],
               ),
             ),
             CupertinoButton(
               onPressed: () => _onCurrentPage(1),
               child: Icon(
                 CupertinoIcons.text_badge_checkmark,
-                color: _currentIndex == 1
-                    ? DoryColors.primaryColor
-                    : Colors.grey[350],
+                color: _currentIndex == 1 ? Colors.blue : Colors.grey[350],
               ),
             ),
             CupertinoButton(
-              onPressed: () => _onCurrentPage(1),
+              onPressed: () => _onCurrentPage(2),
               child: Icon(
                 Icons.local_pharmacy,
                 color: _currentIndex == 2

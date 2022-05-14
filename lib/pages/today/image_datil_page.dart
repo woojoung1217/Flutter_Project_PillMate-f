@@ -38,7 +38,8 @@ class ImageDetailPage extends StatelessWidget {
               decoration: InputDecoration(
                 hintMaxLines: 100,
                 contentPadding: const EdgeInsets.symmetric(
-                  vertical: 20.0,
+                  vertical: 50.0,
+                  horizontal: 30,
                 ),
                 border: const OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(10.0)),

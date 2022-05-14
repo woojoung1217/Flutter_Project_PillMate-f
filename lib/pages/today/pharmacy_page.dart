@@ -10,15 +10,15 @@ import '../../models/medicine_history.dart';
 import 'today_empty_widget.dart';
 import 'today_take_tile.dart';
 
-class TodayPage extends StatelessWidget {
-  const TodayPage({Key? key}) : super(key: key);
+class PharmacyPage extends StatelessWidget {
+  const PharmacyPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('복약목록💊',
+        const Text('PharmacyPage💊',
             style: TextStyle(
               color: Colors.black,
               fontSize: 30,
