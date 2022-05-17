@@ -33,8 +33,10 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _onAddMedicine,
         backgroundColor: Colors.blue[500], // 색
+
         child: const Icon(
           CupertinoIcons.add,
+          size: 35,
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
@@ -68,9 +70,7 @@ class _HomePageState extends State<HomePage> {
               onPressed: () => _onCurrentPage(2),
               child: Icon(
                 Icons.local_pharmacy,
-                color: _currentIndex == 2
-                    ? DoryColors.primaryColor
-                    : Colors.grey[350],
+                color: _currentIndex == 2 ? Colors.blue : Colors.grey[350],
               ),
             ),
           ],

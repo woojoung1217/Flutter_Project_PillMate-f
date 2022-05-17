@@ -23,13 +23,13 @@ class ImageDetailPage extends StatelessWidget {
               File(imagePath),
             ),
           ),
-
           const SizedBox(
             height: 40,
           ),
           // 추가
 
           TextFormField(
+              // controller: _nameAfterMedicine,
               maxLength: 50,
               keyboardType: TextInputType.text,
               textInputAction: TextInputAction.done,

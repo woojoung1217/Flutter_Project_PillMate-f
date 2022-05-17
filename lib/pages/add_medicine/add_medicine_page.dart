@@ -64,9 +64,12 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
       body: SingleChildScrollView(
         child: AddPageBody(
           children: [
-            Text(
-              '어떤 약이예요?',
-              style: Theme.of(context).textTheme.headline4,
+            const Text(
+              '필메이트 에서 약품정보 등록해봐요💊',
+              style: TextStyle(
+                  fontSize: 21,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w600),
             ),
             const SizedBox(height: largeSpace),
             Center(
@@ -89,6 +92,9 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
               textInputAction: TextInputAction.done,
               style: Theme.of(context).textTheme.bodyText1,
               decoration: InputDecoration(
+                focusedBorder: const UnderlineInputBorder(
+                  borderSide: BorderSide(width: 2.0, color: Colors.blueAccent),
+                ),
                 hintText: '복용할 약 이름을 기입해주세요.',
                 hintStyle: Theme.of(context).textTheme.bodyText2,
                 contentPadding: textFieldContentPadding,
@@ -102,7 +108,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
       ),
       bottomNavigationBar: BottomSubmitButton(
         onPressed: _nameController.text.isEmpty ? null : _onAddAlarmPage,
-        text: '다음',
+        text: '완 료',
       ),
     );
   }
@@ -120,6 +126,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
     );
   }
 }
+// 우중아 여기서 참고하자
 
 class _MedicineImageButton extends StatefulWidget {
   const _MedicineImageButton(
@@ -146,6 +153,7 @@ class _MedicineImageButtonState extends State<_MedicineImageButton> {
   Widget build(BuildContext context) {
     return CircleAvatar(
       radius: 40,
+      backgroundColor: Colors.blueAccent,
       child: CupertinoButton(
         onPressed: _showBottomSheet,
         padding: _pickedImage == null ? null : EdgeInsets.zero,
