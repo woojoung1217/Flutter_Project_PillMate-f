@@ -17,9 +17,14 @@ class HistoryPage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          '잘 복용 했어요 👏🏻',
-          style: Theme.of(context).textTheme.headline4,
+        const Text(
+          '잘 복용 했나요? 😃',
+          // style: Theme.of(context).textTheme.headline4,
+
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 25,
+          ),
         ),
         const SizedBox(height: regularSpace),
         const Divider(height: 1, thickness: 1.0),

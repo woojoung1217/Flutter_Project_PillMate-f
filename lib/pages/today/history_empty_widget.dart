@@ -8,20 +8,22 @@ class HistoryEmpty extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.end,
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const Center(child: Text('복약한 기록이 없습니다.')),
+        const Center(
+            child: Text(
+          '복약한 기록이 없습니다.',
+          style: TextStyle(
+              color: Colors.blueAccent,
+              fontSize: 15,
+              fontWeight: FontWeight.bold),
+        )),
         const SizedBox(height: smallSpace),
         Text(
-          '약 복용 후 복용했다고 알려주세요',
+          '약 복용 후 복용했다고 알려주세요!',
           style: Theme.of(context).textTheme.subtitle1,
         ),
-        const SizedBox(height: largeSpace),
-        const Align(
-          alignment: Alignment(-0.6, 0),
-          child: Icon(CupertinoIcons.arrow_down),
-        ),
-        const SizedBox(height: regularSpace),
       ],
     );
   }

@@ -85,6 +85,9 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
               '약 이름',
               style: Theme.of(context).textTheme.subtitle1,
             ),
+            const SizedBox(
+              height: 10,
+            ),
             TextFormField(
               controller: _nameController,
               maxLength: 20,
@@ -93,9 +96,45 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
               style: Theme.of(context).textTheme.bodyText1,
               decoration: InputDecoration(
                 focusedBorder: const UnderlineInputBorder(
-                  borderSide: BorderSide(width: 2.0, color: Colors.blueAccent),
+                  borderSide: BorderSide(width: 2.0, color: Colors.redAccent),
                 ),
                 hintText: '복용할 약 이름을 기입해주세요.',
+                hintStyle: Theme.of(context).textTheme.bodyText2,
+                contentPadding: textFieldContentPadding,
+              ),
+              onChanged: (_) {
+                setState(() {});
+              },
+            ),
+            TextFormField(
+              // controller: _nameController,
+              maxLength: 10,
+              keyboardType: TextInputType.number,
+              textInputAction: TextInputAction.done,
+              style: Theme.of(context).textTheme.bodyText1,
+              decoration: InputDecoration(
+                focusedBorder: const UnderlineInputBorder(
+                  borderSide: BorderSide(width: 2.0, color: Colors.blueAccent),
+                ),
+                hintText: '며칠 동안 복용하나요? / 숫자로',
+                hintStyle: Theme.of(context).textTheme.bodyText2,
+                contentPadding: textFieldContentPadding,
+              ),
+              onChanged: (_) {
+                setState(() {});
+              },
+            ),
+            TextFormField(
+              // controller: _nameController,
+              maxLength: 10,
+              keyboardType: TextInputType.text,
+              textInputAction: TextInputAction.done,
+              style: Theme.of(context).textTheme.bodyText1,
+              decoration: InputDecoration(
+                focusedBorder: const UnderlineInputBorder(
+                  borderSide: BorderSide(width: 2.0, color: Colors.blueAccent),
+                ),
+                hintText: '뭐 때문에 복용해요?, ex) 비염 , 피부질환',
                 hintStyle: Theme.of(context).textTheme.bodyText2,
                 contentPadding: textFieldContentPadding,
               ),
@@ -152,7 +191,7 @@ class _MedicineImageButtonState extends State<_MedicineImageButton> {
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
-      radius: 40,
+      radius: 50,
       backgroundColor: Colors.blueAccent,
       child: CupertinoButton(
         onPressed: _showBottomSheet,
@@ -160,12 +199,12 @@ class _MedicineImageButtonState extends State<_MedicineImageButton> {
         child: _pickedImage == null
             ? const Icon(
                 CupertinoIcons.photo_camera_solid,
-                size: 30,
+                size: 40,
                 color: Colors.white,
               )
             : CircleAvatar(
                 foregroundImage: FileImage(_pickedImage!),
-                radius: 40,
+                radius: 50,
               ),
       ),
     );

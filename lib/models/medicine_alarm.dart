@@ -6,3 +6,8 @@ class MedicineAlarm {
   final String alarmTime;
   final int key;
 }
+
+class afterMedicine {
+  afterMedicine(this.afterPill);
+  final String afterPill;
+}

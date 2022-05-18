@@ -18,10 +18,10 @@ class TodayPage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('복약목록💊',
+        const Text('필메이트에서 복용을 편하게 💊 ',
             style: TextStyle(
               color: Colors.black,
-              fontSize: 30,
+              fontSize: 25,
             )),
         const SizedBox(height: regularSpace),
         Expanded(

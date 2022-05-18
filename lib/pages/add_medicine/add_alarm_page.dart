@@ -35,9 +35,11 @@ class AddAlarmPage extends StatelessWidget {
       appBar: AppBar(),
       body: AddPageBody(
         children: [
-          Text(
-            '매일 복약 잊지 말아요!',
-            style: Theme.of(context).textTheme.headline4,
+          const Text(
+            '알람시간 설정으로 꾸준히 복용해요⏱',
+            // style: Theme.of(context).textTheme.subtitle1,
+            style: TextStyle(
+                fontSize: 21, fontWeight: FontWeight.w400, color: Colors.black),
           ),
           const SizedBox(height: largeSpace),
           Expanded(
@@ -193,7 +195,10 @@ class AlarmBox extends StatelessWidget {
             onPressed: () {
               service.removeAlarm(time);
             },
-            icon: const Icon(CupertinoIcons.minus_circle),
+            icon: const Icon(
+              CupertinoIcons.minus_circle,
+              color: Colors.black87,
+            ),
           ),
         ),
         Expanded(
@@ -247,11 +252,14 @@ class AddAlarmButton extends StatelessWidget {
         children: const [
           Expanded(
             flex: 1,
-            child: Icon(CupertinoIcons.plus_circle_fill),
+            child: Icon(
+              CupertinoIcons.plus_circle_fill,
+              color: Colors.blueAccent,
+            ),
           ),
           Expanded(
             flex: 5,
-            child: Center(child: Text('복용시간 추가')),
+            child: Center(child: Text('알람시간 추가')),
           )
         ],
       ),

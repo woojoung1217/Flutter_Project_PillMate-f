@@ -1,4 +1,5 @@
 import 'package:dory/pages/today/pharmacy_page.dart';
+import 'package:dory/pages/today/profile_setting_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -21,6 +22,7 @@ class _HomePageState extends State<HomePage> {
     const TodayPage(),
     const HistoryPage(),
     const PharmacyPage(),
+    const PharmacySettingPage(),
   ];
 
   @override
@@ -32,7 +34,8 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _onAddMedicine,
-        backgroundColor: Colors.blue[500], // 색
+        // backgroundColor: Colors.blue[300], // 색
+        backgroundColor: Colors.blue[300],
 
         child: const Icon(
           CupertinoIcons.add,
@@ -71,6 +74,13 @@ class _HomePageState extends State<HomePage> {
               child: Icon(
                 Icons.local_pharmacy,
                 color: _currentIndex == 2 ? Colors.blue : Colors.grey[350],
+              ),
+            ),
+            CupertinoButton(
+              onPressed: () => _onCurrentPage(3),
+              child: Icon(
+                Icons.people_alt,
+                color: _currentIndex == 3 ? Colors.blue : Colors.grey[350],
               ),
             ),
           ],

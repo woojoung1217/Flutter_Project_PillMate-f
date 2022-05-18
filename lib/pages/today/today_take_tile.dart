@@ -64,12 +64,12 @@ class BeforeTakeTile extends StatelessWidget {
                 ),
               );
             },
-            title: '지금😀',
+            title: '지금',
           ),
           Text('|', style: textStyle),
           TileActionButton(
             onTap: () => _onPreviousTake(context),
-            title: '아까😂',
+            title: '아까',
           ),
           Text('먹었어요!', style: textStyle),
         ],

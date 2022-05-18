@@ -63,6 +63,7 @@ class TimeSettingBottomSheet extends StatelessWidget {
                 height: submitButtonHeight,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
+                    primary: Colors.blueAccent,
                     textStyle: Theme.of(context).textTheme.subtitle1,
                   ),
                   onPressed: () => Navigator.pop(context, setDateTime),

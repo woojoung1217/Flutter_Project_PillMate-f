@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.adbr.dory">
    <application
-        android:label="잊지마약"
+        android:label="필메이트"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
