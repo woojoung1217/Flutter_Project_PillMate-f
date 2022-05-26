@@ -195,6 +195,7 @@ class AlarmBox extends StatelessWidget {
             onPressed: () {
               service.removeAlarm(time);
             },
+            // 아이콘 버튼 스타일 변경
             icon: const Icon(
               CupertinoIcons.minus_circle,
               color: Colors.black87,
