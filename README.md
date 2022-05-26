@@ -5,6 +5,8 @@ A new Flutter project.
 
 ## Getting Started
 
+
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
@@ -126,7 +128,7 @@ screen2 > bottom sheet
 1 타임라인창 
 타임라인창 → 타일 → 사진 이미지 클릭시 (2) 호출
 
-![1 타임라인창 (약 복용 전)
+![1 타임라인창 (약 복용 전 )
 타임라인창 → 약 복용 시간 입력 버튼(지금 | 아까) 클릭시 (3) bottom sheet 출력](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/94bf9878-4be6-43b2-a3de-0e9da27681d7/Untitled.png)
 
 1 타임라인창 (약 복용 전)
