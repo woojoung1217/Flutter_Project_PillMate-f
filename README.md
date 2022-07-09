@@ -20,7 +20,7 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
-#
+# 개인 프로젝트 임니다
 
 # PIll Mate 💊 소개 
  - 약품 섭취를 편하게 복용할 수 있도록 도와주고  
