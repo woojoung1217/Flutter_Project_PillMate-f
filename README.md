@@ -1,6 +1,7 @@
 ![
 1](https://user-images.githubusercontent.com/34205465/195056959-3b595f67-e992-4a7b-b061-f96d0d0df77e.jpeg)
 
+![slider11](https://user-images.githubusercontent.com/34205465/195077097-b0b678c3-1e61-4956-a8e6-fef687bd3d93.png)
 
 
 A new Flutter project.
@@ -37,11 +38,13 @@ samples, guidance on mobile development, and a full API reference.
  
 ![ㅇㄹㅎ](https://user-images.githubusercontent.com/34205465/169370613-66e50b31-c4ab-4741-9a75-c0f5474a749b.png)
 
+![slider22](https://user-images.githubusercontent.com/34205465/195077088-820acfae-f4aa-4031-b83a-d10f4176dccc.png)
 
  
 # 프로젝트 구조 
  ```
-lib
+
+
 	**ㄴ components**
 		(버튼, 컬러, 라우트 애니메이션, 사이즈, 테마)
 	**ㄴ config**
