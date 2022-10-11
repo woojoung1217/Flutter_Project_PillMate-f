@@ -1,4 +1,5 @@
-![slider1](https://user-images.githubusercontent.com/34205465/195056959-3b595f67-e992-4a7b-b061-f96d0d0df77e.jpeg)
+![
+1](https://user-images.githubusercontent.com/34205465/195056959-3b595f67-e992-4a7b-b061-f96d0d0df77e.jpeg)
 
 
 
@@ -11,6 +12,9 @@ A new Flutter project.
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
+
+![slider2](https://user-images.githubusercontent.com/34205465/195070947-0a23749c-c4f6-4fe2-bf42-acf2631f7b6a.png)
+
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
