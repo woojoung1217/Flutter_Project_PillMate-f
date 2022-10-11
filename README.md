@@ -45,8 +45,10 @@ lib
 	**ㄴ components**
 		(버튼, 컬러, 라우트 애니메이션, 사이즈, 테마)
 	**ㄴ config**
-		(hive box name.. 등)
-	**ㄴ models**
+		(hive box name.. 등)![slider22](https://user-images.githubusercontent.com/34205465/195076839-71ec2fc5-c66b-447b-b7af-a0955f874a3d.png)
+
+	**ㄴ models**![slider11](https://user-images.githubusercontent.com/34205465/195076847-c091982a-8f08-46fb-9719-208202345d8a.png)
+
 		(모델 데이터)
 	**ㄴ repositories**
 		(hive CRUD)
